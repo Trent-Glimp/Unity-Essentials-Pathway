@@ -12,12 +12,24 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Turn speed (degrees/sec).")]
     public float rotationSpeed = 120.0f;
 
+    [Tooltip("Jump force (units).")]
+    public float jumpForce = 5.0f;
+
     private Rigidbody rb; 
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         if (rb == null) Debug.LogWarning("PlayerController needs a Rigidbody.");
+    }
+
+    private void Update()
+    {
+        // Jumping (spacebar)
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        }
     }
 
     private void FixedUpdate() 
