@@ -5,6 +5,7 @@ using UnityEngine;
 public class Collectible : MonoBehaviour
 {
     public float rotationSpeed = 0.5f;
+    public GameObject onCollectEffect;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,5 +17,18 @@ public class Collectible : MonoBehaviour
     void Update()
     {
         transform.Rotate(0, rotationSpeed, 0);
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        //Destroy the collectible when the player collides with it
+        if (other.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+            
+            // Instantiate the particle effect
+            Instantiate(onCollectEffect, transform.position, transform.rotation);
+        }
     }
 }
