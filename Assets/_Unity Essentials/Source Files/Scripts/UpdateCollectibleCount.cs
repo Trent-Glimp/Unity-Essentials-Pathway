@@ -49,6 +49,6 @@ public class UpdateCollectibleCount : MonoBehaviour
         }
 
         // Update the collectible count display
-        collectibleText.text = $"Collectibles remaining: {totalCollectibles}";
+        collectibleText.text = $"Stars Remaining: {totalCollectibles}";
     }
 }
