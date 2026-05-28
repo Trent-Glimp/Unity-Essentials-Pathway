@@ -128,18 +128,6 @@ This project also serves as my first portfolio piece in Unity development.
 
 ---
 
-# 📸 Screenshots
-
-> Add screenshots here later!
-
-Example:
-
-```md
-![Gameplay Screenshot](images/screenshot1.png)
-```
-
----
-
 # 🔮 Future Improvements
 
 Some ideas I may continue exploring in future Unity projects:
@@ -159,7 +147,7 @@ Some ideas I may continue exploring in future Unity projects:
 If you want to open the project locally in Unity:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git clone https://github.com/Trent-Glimp/Unity-Essentials-Pathway.git
 ```
 
 Then:
@@ -192,6 +180,6 @@ You are free to use, modify, and learn from this project.
 
 If you'd like to connect or check out future projects:
 
-- GitHub: https://github.com/YOUR_USERNAME
+- GitHub: https://github.com/Trent-Glimp
 
 ---
